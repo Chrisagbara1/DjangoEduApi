@@ -25,7 +25,7 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 SECRET_KEY = 'django-insecure-w@i4p(*40wlxa&wv-rj1e!fal2+#85$9&tyl=+js2%8_f^7c+o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'online_learning.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
